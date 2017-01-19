@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.base import View
 from books.models import Books
 from books.forms import BookForm
+# rith commit
 class DisplayBookView(View):
     def get(self,request):
         books = Books.objects.all()
